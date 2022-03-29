@@ -8,9 +8,9 @@ import RouteApp from './components/App';
 import getStore from './store/getStore';
 
 import './index.css';
-import Users from './components/Users';
+import Users from './components/Finance/Users';
 import Counter from './components/Counter';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 
 const { store } = getStore();
 

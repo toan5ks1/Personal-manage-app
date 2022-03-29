@@ -1,0 +1,72 @@
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience__wrapper {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+  padding: 2.4rem 0rem;
+  transition: var(--transition);
+}
+
+.experience__wrapper:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  /* color: var(--color-primary); */
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.skill__wrapper {
+  display: flex;
+  text-align: left;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.skill__wrapper > div h4 {
+  margin-top: -0.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .skills__container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__wrapper {
+    width: 100%;
+    padding: 2rem 0.75rem;
+  }
+}
